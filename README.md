@@ -16,3 +16,11 @@ Currently, the height, width, framerate, and alignment data is hardcoded, and mu
 ## Tooling
 
 In order to test this, it is recommended that you use gstreamer, as shown in the test_me script. That requires gstreamer, pipewire 0.2 built with the gstreamer plugins, and gstreamer-plugins-good.
+
+## Todo
+
+[] Support output selection
+[] Support dynamic width/height
+[] Support copy_with_damage to reduce CPU load
+[] Add a timer to reregister the frame callbacks to cap the framerate
+[] Refactoring
