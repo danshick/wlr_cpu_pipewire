@@ -7,11 +7,10 @@ project(
 	default_options: [
 		'c_std=c11',
 		'warning_level=2',
-		'werror=true'
+		'werror=true',
+		'debug=true'
 	],
 )
-
-add_project_arguments('-g', language : 'c')
 
 add_project_arguments('-Wno-unused-parameter', language: 'c')
 add_project_arguments('-Wno-unused-function', language: 'c')
