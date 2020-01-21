@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-#include <spa/support/type-map.h>
-#include <spa/param/format-utils.h>
-#include <spa/param/video/format-utils.h>
-#include <spa/param/props.h>
 #include <pipewire/pipewire.h>
+#include <spa/param/format-utils.h>
+#include <spa/param/props.h>
+#include <spa/param/video/format-utils.h>
+#include <spa/support/type-map.h>
 
 #include "wlr_screencopy.h"
 
