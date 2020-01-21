@@ -19,8 +19,8 @@ In order to test this, it is recommended that you use gstreamer, as shown in the
 
 ## Todo
 
-- [ ] Support output selection
-- [ ] Support dynamic width/height
-- [ ] Support copy_with_damage to reduce CPU load
+- [x] Support output selection
+- [x] Support dynamic width/height
+- [x] Support copy_with_damage to reduce CPU load
 - [ ] Add a timer to reregister the frame callbacks to cap the framerate
-- [ ] Refactoring
+- [x] Refactoring

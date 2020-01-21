@@ -25,22 +25,31 @@ pipewire = dependency('libpipewire-0.2')
 spa = dependency('libspa-0.1')
 
 wayland_client = dependency('wayland-client')
-wayland_protos = dependency('wayland-protocols', version: '>=1.14')
+
+inc = include_directories('include')
 
 subdir('protocol')
 
-executable(
-	'wlr_cpu_pipewire',
-	files([
-		'screencast.c'
-	]),
-	dependencies: [
+sources = [
+		'src/main.c',
+		'src/wlr_screencopy.c',
+		'src/pipewire_screencopy.c',
+		'src/screencast_common.c'
+]
+
+dependencies = [
 		wayland_client,
     wlr_protos,
     pipewire,
     spa,
     threads,
 		rt
-	],
+]
+
+executable(
+	'wlr_cpu_pipewire',
+	files(sources),
+	dependencies: dependencies,
+	include_directories: [inc],
 	install: true,
 )
